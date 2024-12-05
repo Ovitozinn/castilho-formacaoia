@@ -10,22 +10,46 @@ const CastilhoBio = () => {
               Quem é o Castilho?
             </h2>
             <div className="space-y-6 text-lg text-gray-300">
-              <p className="glass p-4 rounded-lg">
-                Com mais de uma década de experiência em tecnologia e inovação, 
-                Castilho é um especialista reconhecido em Inteligência Artificial 
-                e automação de processos.
-              </p>
-              <p className="glass p-4 rounded-lg">
-                Fundador de múltiplas startups de sucesso e mentor de dezenas 
-                de profissionais que hoje lideram projetos de IA em grandes 
-                empresas, ele traz uma abordagem única que combina conhecimento 
-                técnico profundo com visão estratégica de negócios.
-              </p>
-              <p className="glass p-4 rounded-lg">
-                Sua missão é democratizar o conhecimento em IA e ajudar 
-                profissionais a se destacarem neste mercado em explosão.
-              </p>
+              <div className="glass p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                <p className="mb-4">
+                  Com formação em <span className="text-primary font-semibold">Análise e Desenvolvimento de Sistemas</span>, 
+                  iniciei minha jornada no marketing. Porém, me encontrei na 
+                  <span className="text-primary font-semibold"> Análise de Dados</span>, onde consegui meu primeiro emprego na área.
+                </p>
+                <p>
+                  Evoluí para <span className="text-primary font-semibold">Analista de Inteligência de Mercado</span>, 
+                  onde aprendi e aprimorei meus conhecimentos sobre Business e Dados.
+                </p>
+              </div>
+
+              <div className="glass p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                <p className="mb-4">
+                  Logo me encontrei num platô - queria ganhar mais e trabalhar menos.
+                  Tentei de tudo, literalmente! Abri loja de produtos naturais, 
+                  lavei carros, fiz dropshipping, afiliado... E nada funcionou.
+                </p>
+              </div>
+
+              <div className="glass p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                <p className="mb-4">
+                  Até que encontrei a <span className="gradient-text font-bold">Inteligência Artificial</span>, 
+                  que tem uma curva de aprendizado muito rápida. Logo iniciei a montar 
+                  agentes IA e automações.
+                </p>
+                <p>
+                  Fechei meus primeiros contratos e hoje só fecho os contratos que 
+                  <span className="text-primary font-bold"> EU QUERO!</span>
+                </p>
+              </div>
+
+              <div className="glass p-6 rounded-lg transform hover:scale-105 transition-all duration-300">
+                <p className="text-xl font-semibold gradient-text">
+                  E agora ensino diversas pessoas a transformarem sua vida em pouquíssimo 
+                  tempo com IA.
+                </p>
+              </div>
             </div>
+            
             <div className="flex gap-4 mt-8">
               <a 
                 href="https://www.linkedin.com/notifications/?filter=all" 
