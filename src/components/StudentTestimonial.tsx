@@ -50,7 +50,7 @@ const StudentTestimonial = () => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary-hover opacity-75 blur-2xl group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="relative">
                   <img 
-                    src="/lovable-uploads/8a778894-0186-48e6-a6d7-f78f25b74216.png"
+                    src="/lovable-uploads/c7ae4e4c-4ee5-417d-a208-7ac0fec8bf69.png"
                     alt="Feedback do aluno no WhatsApp" 
                     className="rounded-lg w-full shadow-xl transform group-hover:scale-105 transition-transform duration-500"
                   />
