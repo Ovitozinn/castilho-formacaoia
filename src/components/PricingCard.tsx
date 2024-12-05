@@ -62,12 +62,14 @@ const PricingCard = ({
           </li>
         ))}
       </ul>
-      <CTAButton
-        variant={isPopular ? "primary" : "secondary"}
-        className="w-full"
-      >
-        {isPopular ? "Garantir minha vaga" : "Começar agora"}
-      </CTAButton>
+      {isPopular && (
+        <CTAButton
+          variant="primary"
+          className="w-full"
+        >
+          Garantir minha vaga
+        </CTAButton>
+      )}
     </div>
   );
 };

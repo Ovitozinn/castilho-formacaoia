@@ -146,7 +146,7 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 px-4 bg-dark-lighter">
+      <section id="main-offer" className="py-20 px-4 bg-dark-lighter">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-4">
             Cursos Disponíveis

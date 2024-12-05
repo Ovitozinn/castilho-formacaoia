@@ -2,6 +2,11 @@ import { Bot, Brain, Rocket } from "lucide-react";
 import CTAButton from "./CTAButton";
 
 const HeroSection = () => {
+  const scrollToOffer = () => {
+    const offerSection = document.getElementById('main-offer');
+    offerSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-dark-lighter to-dark" />
@@ -25,8 +30,7 @@ const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-          <CTAButton>Começar agora</CTAButton>
-          <CTAButton variant="secondary">Ver grade curricular</CTAButton>
+          <CTAButton onClick={scrollToOffer}>Começar agora</CTAButton>
         </div>
       </div>
     </div>
