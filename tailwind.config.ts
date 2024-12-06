@@ -33,6 +33,11 @@ export default {
           DEFAULT: "#1A1F2C",
           lighter: "#2A2F3C",
         },
+        cyber: {
+          blue: "#00F5FF",
+          purple: "#FF00FF",
+          dark: "#2A2D3E",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -66,6 +71,14 @@ export default {
             "background-position": "right center",
           },
         },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        "glow": {
+          "0%, 100%": { opacity: "0.5" },
+          "50%": { opacity: "1" },
+        },
       },
       animation: {
         "fade-in": "fade-in 0.6s ease-out",
@@ -73,6 +86,8 @@ export default {
         "slide-in": "slide-in 0.6s ease-out",
         pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "gradient-x": "gradient-x 15s ease infinite",
+        "float": "float 3s ease-in-out infinite",
+        "glow": "glow 2s ease-in-out infinite",
       },
     },
   },
