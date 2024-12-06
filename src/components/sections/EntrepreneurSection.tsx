@@ -13,7 +13,7 @@ const EntrepreneurSection = () => {
             <div className="relative">
               <div className="glass rounded-2xl p-2 animate-fade-in">
                 <img
-                  src="/lovable-uploads/c7ae4e4c-4ee5-417d-a208-7ac0fec8bf69.png"
+                  src="/lovable-uploads/22732725-0bc2-4ccd-b573-a92ce2948430.png"
                   alt="Castilho"
                   className="rounded-xl w-full object-cover"
                 />
