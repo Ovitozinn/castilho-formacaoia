@@ -5,6 +5,8 @@ import FinalCTA from "@/components/FinalCTA";
 import EarlyAccessBanner from "@/components/EarlyAccessBanner";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import StatsSection from "@/components/sections/StatsSection";
+import PricingExplanation from "@/components/sections/PricingExplanation";
+import ContactSection from "@/components/sections/ContactSection";
 
 const Index = () => {
   return (
@@ -20,6 +22,8 @@ const Index = () => {
         <CastilhoBio />
         <StudentTestimonial />
         <FinalCTA />
+        <PricingExplanation />
+        <ContactSection />
       </div>
     </div>
   );
