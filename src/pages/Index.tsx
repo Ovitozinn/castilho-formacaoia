@@ -6,7 +6,7 @@ import EarlyAccessBanner from "@/components/EarlyAccessBanner";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import StatsSection from "@/components/sections/StatsSection";
 import PricingExplanation from "@/components/sections/PricingExplanation";
-import ContactSection from "@/components/sections/ContactSection";
+import EntrepreneurSection from "@/components/sections/EntrepreneurSection";
 
 const Index = () => {
   return (
@@ -23,7 +23,7 @@ const Index = () => {
         <StudentTestimonial />
         <FinalCTA />
         <PricingExplanation />
-        <ContactSection />
+        <EntrepreneurSection />
       </div>
     </div>
   );
