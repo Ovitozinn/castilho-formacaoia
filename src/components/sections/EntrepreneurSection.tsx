@@ -56,7 +56,7 @@ const EntrepreneurSection = () => {
               <div className="mt-8">
                 <Button
                   className="bg-cyber-blue hover:bg-cyber-blue/80 text-white px-8 py-6 text-lg rounded-xl"
-                  onClick={() => window.open('https://seu-site-de-servicos.com', '_blank')}
+                  onClick={() => window.open('https://wa.me/message/T75MQFINNMZLO1', '_blank')}
                 >
                   <Target className="w-5 h-5 mr-2" />
                   Conhecer Soluções Empresariais
