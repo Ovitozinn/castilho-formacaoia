@@ -5,6 +5,7 @@ import PricingCard from "@/components/PricingCard";
 import CastilhoBio from "@/components/CastilhoBio";
 import StudentTestimonial from "@/components/StudentTestimonial";
 import FinalCTA from "@/components/FinalCTA";
+import EarlyAccessBanner from "@/components/EarlyAccessBanner";
 
 const Index = () => {
   const features = [
@@ -80,7 +81,7 @@ const Index = () => {
   const completePackage = {
     title: "Formação Completa em IA",
     price: "199",
-    originalPrice: "997",
+    originalPrice: "1997",
     features: [
       "Acesso a TODOS os cursos acima",
       "Mentoria em grupo semanal",
@@ -90,7 +91,7 @@ const Index = () => {
       "Atualizações gratuitas"
     ],
     isPopular: true,
-    description: "🔥 OFERTA ESPECIAL DE LANÇAMENTO 2024 🔥\n\nGaranta agora sua vaga com mais de 80% de desconto!"
+    description: "🔥 OFERTA ESPECIAL DE LANÇAMENTO 2024 🔥\n\nGaranta agora sua vaga com mais de 90% de desconto!"
   };
 
   const aiGrowthStats = [
@@ -118,12 +119,17 @@ const Index = () => {
 
   return (
     <div className="bg-dark text-white">
+      <EarlyAccessBanner />
       <HeroSection />
       
       {/* Features Section */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">
+      <section className="py-20 px-4 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-b from-dark-lighter to-dark opacity-50" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
+        
+        <div className="container mx-auto relative z-10">
+          <h2 className="text-3xl font-bold text-center mb-4 gradient-text">
             Por que escolher nosso curso?
           </h2>
           <p className="text-gray-300 text-center mb-12 max-w-2xl mx-auto">
@@ -146,9 +152,12 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="main-offer" className="py-20 px-4 bg-dark-lighter">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-4">
+      <section id="main-offer" className="py-20 px-4 bg-dark-lighter relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-dark-lighter to-dark-lighter" />
+        
+        <div className="container mx-auto relative z-10">
+          <h2 className="text-3xl font-bold text-center mb-4 gradient-text">
             Cursos Disponíveis
           </h2>
           <p className="text-gray-300 text-center mb-12 max-w-2xl mx-auto">
