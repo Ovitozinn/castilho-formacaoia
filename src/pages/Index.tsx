@@ -7,6 +7,8 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import StatsSection from "@/components/sections/StatsSection";
 import PricingExplanation from "@/components/sections/PricingExplanation";
 import EntrepreneurSection from "@/components/sections/EntrepreneurSection";
+import CoursesSection from "@/components/sections/CoursesSection";
+import YouTubeSection from "@/components/sections/YouTubeSection";
 
 const Index = () => {
   return (
@@ -18,12 +20,16 @@ const Index = () => {
       <div className="relative z-10">
         <EarlyAccessBanner />
         <HeroSection />
-        <StatsSection />
-        <CastilhoBio />
-        <StudentTestimonial />
-        <FinalCTA />
-        <PricingExplanation />
-        <EntrepreneurSection />
+        <div id="main-offer">
+          <StatsSection />
+          <CoursesSection />
+          <CastilhoBio />
+          <StudentTestimonial />
+          <YouTubeSection />
+          <EntrepreneurSection />
+          <FinalCTA />
+          <PricingExplanation />
+        </div>
       </div>
     </div>
   );
