@@ -29,7 +29,7 @@ const FinalCTA = () => {
           </p>
 
           {/* Benefits List */}
-          <div className="grid md:grid-cols-2 gap-3 md:gap-4 mb-8 md:mb-12 text-left">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-8 md:mb-12 mx-auto max-w-3xl">
             {[
               "Acesso vitalício a todo conteúdo",
               "Mentoria em grupo semanal",
