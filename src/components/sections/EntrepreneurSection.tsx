@@ -1,4 +1,4 @@
-import { Building2, Network, Target } from "lucide-react";
+import { Building2, Network, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const EntrepreneurSection = () => {
@@ -8,6 +8,12 @@ const EntrepreneurSection = () => {
       
       <div className="container mx-auto px-4 relative">
         <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            <span className="gradient-text">Precisa implementar algum projeto específico</span>
+            <br />
+            ou de alguma ajuda?
+          </h2>
+
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image Column */}
             <div className="relative">
@@ -23,12 +29,6 @@ const EntrepreneurSection = () => {
             
             {/* Content Column */}
             <div className="space-y-6 animate-fade-in delay-100">
-              <h2 className="text-4xl font-bold">
-                <span className="gradient-text">Soluções Empresariais</span>
-                <br />
-                em Inteligência Artificial
-              </h2>
-              
               <p className="text-xl text-gray-300">
                 Transforme sua empresa com soluções personalizadas em IA. 
                 Consultoria especializada para gestores e empreendedores que 
@@ -36,7 +36,7 @@ const EntrepreneurSection = () => {
               </p>
               
               <div className="grid sm:grid-cols-2 gap-4 mt-8">
-                <div className="glass p-4 rounded-xl">
+                <div className="glass p-4 rounded-xl hover:scale-105 transition-transform">
                   <Building2 className="w-8 h-8 text-cyber-blue mb-2" />
                   <h3 className="font-semibold mb-1">Consultoria</h3>
                   <p className="text-gray-400 text-sm">
@@ -44,7 +44,7 @@ const EntrepreneurSection = () => {
                   </p>
                 </div>
                 
-                <div className="glass p-4 rounded-xl">
+                <div className="glass p-4 rounded-xl hover:scale-105 transition-transform">
                   <Network className="w-8 h-8 text-cyber-purple mb-2" />
                   <h3 className="font-semibold mb-1">Implementação</h3>
                   <p className="text-gray-400 text-sm">
@@ -55,11 +55,11 @@ const EntrepreneurSection = () => {
               
               <div className="mt-8">
                 <Button
-                  className="bg-cyber-blue hover:bg-cyber-blue/80 text-white px-8 py-6 text-lg rounded-xl"
-                  onClick={() => window.open('https://wa.me/message/T75MQFINNMZLO1', '_blank')}
+                  className="bg-cyber-blue hover:bg-cyber-blue/80 text-white px-8 py-6 text-lg rounded-xl w-full sm:w-auto"
+                  onClick={() => window.open('https://cal.com/ovitozin/reuniao-consultoria?date=2024-12-11&month=2024-12', '_blank')}
                 >
-                  <Target className="w-5 h-5 mr-2" />
-                  Conhecer Soluções Empresariais
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Agendar Consultoria
                 </Button>
               </div>
             </div>
