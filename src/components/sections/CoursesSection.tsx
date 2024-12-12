@@ -68,17 +68,17 @@ const CoursesSection = () => {
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               <span className="gradient-text">Formação Completa em IA</span>
             </h3>
-            <div className="flex justify-center items-center gap-2 md:gap-4 mb-2 md:mb-4">
-              <span className="text-lg md:text-xl text-gray-400 line-through">
+            <div className="flex flex-col items-center gap-2 md:gap-4">
+              <span className="text-lg md:text-xl text-gray-400 line-through opacity-75">
                 R$ {totalValue} (valor dos cursos separados)
               </span>
               <span className="text-3xl md:text-4xl font-bold text-white">
                 R$ 199
               </span>
+              <span className="text-lg md:text-xl font-semibold text-primary animate-pulse">
+                Economia de R$ {totalValue - 199}
+              </span>
             </div>
-            <p className="text-base md:text-lg text-primary font-semibold">
-              Economia de R$ {totalValue - 199}
-            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
