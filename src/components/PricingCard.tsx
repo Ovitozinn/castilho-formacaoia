@@ -51,16 +51,16 @@ const PricingCard = ({
       <div className="mb-6">
         <div className="flex flex-col items-center mb-1">
           {originalPrice && (
-            <span className="text-lg text-gray-400 line-through mb-1">
+            <span className="text-base md:text-lg text-gray-400 line-through opacity-75 mb-1">
               R$ {originalPrice}
             </span>
           )}
-          <span className="text-4xl font-bold text-white">
+          <span className="text-3xl md:text-4xl font-bold text-white">
             R$ {price}
           </span>
         </div>
         {description && (
-          <p className="text-sm text-primary mt-2 text-center whitespace-pre-line">
+          <p className="text-sm text-primary mt-2 text-center">
             {description}
           </p>
         )}
