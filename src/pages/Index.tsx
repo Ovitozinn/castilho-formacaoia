@@ -9,19 +9,19 @@ import PricingExplanation from "@/components/sections/PricingExplanation";
 import EntrepreneurSection from "@/components/sections/EntrepreneurSection";
 import CoursesSection from "@/components/sections/CoursesSection";
 import YouTubeSection from "@/components/sections/YouTubeSection";
+import DevelopmentTimeline from "@/components/DevelopmentTimeline";
 
 const Index = () => {
   return (
     <div className="bg-dark text-white relative">
-      {/* Animated background */}
       <ParticlesBackground />
       
-      {/* Content */}
       <div className="relative z-10">
         <EarlyAccessBanner />
         <HeroSection />
         <div id="main-offer">
           <StatsSection />
+          <DevelopmentTimeline />
           <CoursesSection />
           <CastilhoBio />
           <StudentTestimonial />

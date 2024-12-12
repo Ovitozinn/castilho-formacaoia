@@ -36,24 +36,36 @@ const PricingCard = ({
       style={style}
     >
       {isPopular && (
-        <span className="px-3 py-1 text-sm font-medium text-primary bg-primary/20 rounded-full mb-4 inline-block animate-pulse">
-          Oferta Limitada
-        </span>
+        <div className="flex flex-col items-center gap-2 mb-4">
+          <span className="px-3 py-1 text-sm font-medium text-primary bg-primary/20 rounded-full animate-pulse">
+            Oferta Limitada
+          </span>
+          <span className="text-xs text-gray-400">
+            Apenas para Fundadores
+          </span>
+        </div>
       )}
+      
       <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
+      
       <div className="mb-6">
-        <div className="flex items-center gap-2 mb-1">
-          <span className="text-4xl font-bold text-white">R$ {price}</span>
+        <div className="flex flex-col items-center mb-1">
           {originalPrice && (
-            <span className="text-lg text-gray-400 line-through">
+            <span className="text-lg text-gray-400 line-through mb-1">
               R$ {originalPrice}
             </span>
           )}
+          <span className="text-4xl font-bold text-white">
+            R$ {price}
+          </span>
         </div>
         {description && (
-          <p className="text-sm text-primary mt-2 whitespace-pre-line">{description}</p>
+          <p className="text-sm text-primary mt-2 text-center whitespace-pre-line">
+            {description}
+          </p>
         )}
       </div>
+      
       <ul className="space-y-3 mb-6">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center text-gray-300">
@@ -62,6 +74,7 @@ const PricingCard = ({
           </li>
         ))}
       </ul>
+      
       {isPopular && (
         <CTAButton
           variant="primary"
