@@ -38,10 +38,7 @@ const PricingCard = ({
       {isPopular && (
         <div className="flex flex-col items-center gap-2 mb-4">
           <span className="px-3 py-1 text-sm font-medium text-primary bg-primary/20 rounded-full animate-pulse">
-            Oferta Limitada
-          </span>
-          <span className="text-xs text-gray-400">
-            Apenas para Fundadores
+            Oferta Especial
           </span>
         </div>
       )}

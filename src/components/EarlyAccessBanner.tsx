@@ -1,4 +1,4 @@
-import { Clock, Crown, Flame } from "lucide-react";
+import { Crown, Flame } from "lucide-react";
 
 const EarlyAccessBanner = () => {
   return (
@@ -8,14 +8,13 @@ const EarlyAccessBanner = () => {
           <div className="flex items-center gap-2 animate-pulse">
             <Crown className="w-5 h-5 text-primary" />
             <span className="font-medium text-sm md:text-base">
-              Seja um Fundador
+              Formação Completa em IA
             </span>
             <Flame className="w-5 h-5 text-primary" />
           </div>
           <div className="flex items-center gap-2">
-            <Clock className="w-5 h-5 text-primary" />
             <span className="text-sm md:text-base font-medium">
-              Economia de R$ 1.798,00
+              Economia de R$ 1.700,00
             </span>
           </div>
         </div>

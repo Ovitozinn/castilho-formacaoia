@@ -1,39 +1,33 @@
 import React from 'react';
 import CTAButton from './CTAButton';
-import { ArrowRight, CheckCircle2, Clock, Flame } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Flame } from 'lucide-react';
 
 const FinalCTA = () => {
   return (
     <section className="py-12 md:py-24 relative overflow-hidden">
-      {/* Background with gradient and overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-dark to-dark-lighter" />
       
-      {/* Content */}
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Urgency Badge */}
           <div className="inline-flex items-center gap-2 bg-red-500/20 text-red-400 px-4 py-2 rounded-full mb-6 md:mb-8 animate-pulse">
             <Flame className="w-4 h-4 md:w-5 md:h-5" />
-            <span className="font-semibold text-sm md:text-base">Oferta por tempo limitado!</span>
-            <Clock className="w-4 h-4 md:w-5 md:h-5" />
+            <span className="font-semibold text-sm md:text-base">Oferta Especial!</span>
+            <Flame className="w-4 h-4 md:w-5 md:h-5" />
           </div>
 
-          {/* Main Heading */}
           <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 gradient-text">
             Não Perca Esta Oportunidade Única
           </h2>
           
-          {/* Subheading */}
           <p className="text-lg md:text-xl text-gray-300 mb-6 md:mb-8">
             Junte-se aos profissionais que já estão transformando suas carreiras com IA
           </p>
 
-          {/* Benefits List */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-8 md:mb-12 mx-auto max-w-3xl">
             {[
               "Acesso vitalício a todo conteúdo",
               "Mentoria em grupo semanal",
-              "Bônus exclusivos de lançamento",
+              "Bônus exclusivos",
               "Atualizações gratuitas",
               "Comunidade exclusiva de alunos"
             ].map((benefit, index) => (
@@ -48,18 +42,13 @@ const FinalCTA = () => {
             ))}
           </div>
 
-          {/* Price Section */}
           <div className="mb-8 md:mb-12">
             <div className="flex items-center justify-center gap-2 md:gap-4 mb-2 md:mb-4">
-              <span className="text-xl md:text-2xl text-gray-400 line-through">R$ 997</span>
-              <span className="text-3xl md:text-4xl font-bold text-white">R$ 199</span>
+              <span className="text-xl md:text-2xl text-gray-400 line-through">R$ 1.997</span>
+              <span className="text-3xl md:text-4xl font-bold text-white">R$ 297</span>
             </div>
-            <p className="text-primary font-semibold text-sm md:text-base">
-              12x de R$ 19,90 sem juros
-            </p>
           </div>
 
-          {/* CTA Button */}
           <div className="flex flex-col items-center gap-4 md:gap-6">
             <CTAButton 
               className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 animate-bounce w-full md:w-auto"
