@@ -1,4 +1,4 @@
-import { Lightbulb, Rocket, Target } from "lucide-react";
+import { Layout, Copy, Target } from "lucide-react";
 import TechCard from "./TechCard";
 
 const DevelopmentTimeline = () => {
@@ -19,13 +19,13 @@ const DevelopmentTimeline = () => {
                 <span className="absolute -top-4 -left-4 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                   1
                 </span>
-                <Lightbulb className="w-8 h-8 text-cyber-blue animate-pulse" />
+                <Layout className="w-8 h-8 text-cyber-blue animate-pulse" />
               </div>
-              <h3 className="text-xl font-semibold">Dias 1-2: Ideação e Construção</h3>
+              <h3 className="text-xl font-semibold">Dias 1-2: Estrutura Simplificada</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>Escolha da solução ideal</li>
-                <li>Montagem do produto</li>
-                <li>Testes e validação</li>
+                <li>Criação da estrutura base</li>
+                <li>Configuração inicial</li>
+                <li>Preparação do ambiente</li>
               </ul>
             </div>
           </TechCard>
@@ -36,13 +36,13 @@ const DevelopmentTimeline = () => {
                 <span className="absolute -top-4 -left-4 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">
                   2
                 </span>
-                <Rocket className="w-8 h-8 text-primary animate-pulse" />
+                <Copy className="w-8 h-8 text-primary animate-pulse" />
               </div>
-              <h3 className="text-xl font-semibold">Dias 3-4: Expansão</h3>
+              <h3 className="text-xl font-semibold">Dias 3-4: Adaptação do Projeto Principal</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>Adição de recursos premium</li>
-                <li>Automações avançadas</li>
-                <li>Escalabilidade do projeto</li>
+                <li>Cópia do projeto principal</li>
+                <li>Adaptações necessárias</li>
+                <li>Personalização da solução</li>
               </ul>
             </div>
           </TechCard>
@@ -55,11 +55,11 @@ const DevelopmentTimeline = () => {
                 </span>
                 <Target className="w-8 h-8 text-cyber-purple animate-pulse" />
               </div>
-              <h3 className="text-xl font-semibold">Dia 5: Monetização</h3>
+              <h3 className="text-xl font-semibold">Dia 5: Monetização e Melhorias</h3>
               <ul className="space-y-2 text-gray-300">
-                <li>Estratégias de venda direta</li>
-                <li>Captação orgânica</li>
-                <li>Fechamento de contratos</li>
+                <li>Implementação de melhorias</li>
+                <li>Estratégias de monetização</li>
+                <li>Otimização do projeto</li>
               </ul>
             </div>
           </TechCard>
@@ -72,11 +72,11 @@ const DevelopmentTimeline = () => {
             </h3>
             <ul className="grid md:grid-cols-2 gap-3 text-gray-300">
               <li className="flex items-center gap-2 justify-center">
-                <Lightbulb className="w-5 h-5 text-primary" />
+                <Layout className="w-5 h-5 text-primary" />
                 Suporte direto durante todo o processo
               </li>
               <li className="flex items-center gap-2 justify-center">
-                <Rocket className="w-5 h-5 text-primary" />
+                <Copy className="w-5 h-5 text-primary" />
                 Templates prontos para usar
               </li>
               <li className="flex items-center gap-2 justify-center">
@@ -84,7 +84,7 @@ const DevelopmentTimeline = () => {
                 Comunidade ativa de alunos
               </li>
               <li className="flex items-center gap-2 justify-center">
-                <Lightbulb className="w-5 h-5 text-primary" />
+                <Layout className="w-5 h-5 text-primary" />
                 Cases reais de sucesso
               </li>
             </ul>
