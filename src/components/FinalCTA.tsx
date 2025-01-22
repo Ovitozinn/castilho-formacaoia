@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, Flame } from 'lucide-react';
 const FinalCTA = () => {
   return (
     <section className="py-12 md:py-24 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-dark to-dark-lighter" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-dark to-dark-lighter animate-gradient-x" />
       
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center">
@@ -15,7 +15,7 @@ const FinalCTA = () => {
             <Flame className="w-4 h-4 md:w-5 md:h-5" />
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 gradient-text">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 gradient-text animate-fade-in">
             Não Perca Esta Oportunidade Única
           </h2>
           
@@ -33,7 +33,7 @@ const FinalCTA = () => {
             ].map((benefit, index) => (
               <div 
                 key={index}
-                className="flex items-center gap-2 md:gap-3 p-3 md:p-4 glass rounded-lg animate-fade-in"
+                className="flex items-center gap-2 md:gap-3 p-3 md:p-4 glass rounded-lg animate-fade-in hover:scale-105 transition-all duration-300"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CheckCircle2 className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
@@ -51,7 +51,7 @@ const FinalCTA = () => {
 
           <div className="flex flex-col items-center gap-4 md:gap-6">
             <CTAButton 
-              className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 animate-bounce w-full md:w-auto"
+              className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 animate-bounce w-full md:w-auto hover:scale-105 transition-transform duration-300"
               onClick={() => window.location.href = "https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"}
             >
               <span className="flex items-center justify-center gap-2">

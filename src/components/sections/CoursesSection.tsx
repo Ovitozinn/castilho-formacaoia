@@ -29,11 +29,11 @@ const totalValue = courses.reduce((acc, course) => acc + course.price, 0);
 const CoursesSection = () => {
   return (
     <section className="py-16 md:py-24 px-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-dark-lighter to-dark opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-dark-lighter to-dark opacity-90 animate-gradient-x" />
       
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 gradient-text">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 gradient-text animate-fade-in">
             Formação Completa + Cursos Inclusos
           </h2>
           <p className="text-lg md:text-xl text-gray-300">
@@ -41,7 +41,6 @@ const CoursesSection = () => {
           </p>
         </div>
 
-        {/* Cursos */}
         <div className="grid md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto mb-8 md:mb-16">
           {courses.map((course, index) => (
             <div
@@ -62,8 +61,7 @@ const CoursesSection = () => {
           ))}
         </div>
 
-        {/* Formação Completa */}
-        <div className="max-w-4xl mx-auto glass p-6 md:p-8 rounded-2xl">
+        <div className="max-w-4xl mx-auto glass p-6 md:p-8 rounded-2xl animate-fade-in">
           <div className="text-center mb-6 md:mb-8">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               <span className="gradient-text">Formação Completa em IA</span>
@@ -73,10 +71,10 @@ const CoursesSection = () => {
                 R$ {totalValue} (valor dos cursos separados)
               </span>
               <span className="text-3xl md:text-4xl font-bold text-white">
-                R$ 199
+                R$ 297
               </span>
               <span className="text-lg md:text-xl font-semibold text-primary animate-pulse">
-                Economia de R$ {totalValue - 199}
+                Economia de R$ {totalValue - 297}
               </span>
             </div>
           </div>
@@ -85,13 +83,13 @@ const CoursesSection = () => {
             {[
               "Acesso vitalício a todo conteúdo",
               "Mentoria em grupo semanal",
-              "Bônus exclusivos de lançamento",
+              "Bônus exclusivos",
               "Atualizações gratuitas",
               "Comunidade exclusiva de alunos"
             ].map((benefit, index) => (
               <div 
                 key={index}
-                className="flex items-center gap-2 md:gap-3 p-3 md:p-4 glass rounded-lg"
+                className="flex items-center gap-2 md:gap-3 p-3 md:p-4 glass rounded-lg hover:scale-105 transition-all duration-300"
               >
                 <Check className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                 <span className="text-sm md:text-base text-gray-200">{benefit}</span>
@@ -102,7 +100,7 @@ const CoursesSection = () => {
           <div className="text-center">
             <CTAButton 
               onClick={() => window.location.href = "https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"}
-              className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full md:w-auto"
+              className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full md:w-auto animate-bounce hover:scale-105 transition-transform duration-300"
             >
               Garantir Minha Vaga Agora
             </CTAButton>
