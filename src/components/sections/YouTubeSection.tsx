@@ -17,7 +17,7 @@ const YouTubeSection = () => {
           <div className="glass rounded-xl overflow-hidden">
             <div className="relative pb-[56.25%] h-0">
               <iframe
-                src="https://www.youtube.com/embed/nK4jsgBp78A?rel=0&modestbranding=1"
+                src="https://www.youtube.com/embed/s6L5JVxGnUU?rel=0&modestbranding=1"
                 title="YouTube video player"
                 className="absolute top-0 left-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

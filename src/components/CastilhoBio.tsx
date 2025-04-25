@@ -68,7 +68,7 @@ const CastilhoBio = () => {
                 <Instagram className="w-6 h-6 text-primary" />
               </a>
               <a 
-                href="https://www.youtube.com/@gruposenaai" 
+                href="https://www.youtube.com/@castilhoia" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 glass rounded-full hover:scale-110 transition-transform hover:bg-primary/20"
