@@ -82,10 +82,8 @@ const CoursesSection = () => {
           <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
             {[
               "Acesso vitalício a todo conteúdo",
-              "Mentoria em grupo semanal",
               "Bônus exclusivos",
-              "Atualizações gratuitas",
-              "Comunidade exclusiva de alunos"
+              "Atualizações gratuitas"
             ].map((benefit, index) => (
               <div 
                 key={index}
