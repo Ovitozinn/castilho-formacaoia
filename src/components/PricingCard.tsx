@@ -76,7 +76,7 @@ const PricingCard = ({
         <CTAButton
           variant="primary"
           className="w-full"
-          onClick={() => window.location.href = "https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"}
+          onClick={() => window.location.href = "https://pay.hub.la/ARX176QDkdSkVfgpXqIb"}
         >
           Garantir minha vaga
         </CTAButton>

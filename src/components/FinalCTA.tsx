@@ -50,7 +50,7 @@ const FinalCTA = () => {
           <div className="flex flex-col items-center gap-4 md:gap-6">
             <CTAButton 
               className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 animate-bounce w-full md:w-auto hover:scale-105 transition-transform duration-300"
-              onClick={() => window.location.href = "https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"}
+              onClick={() => window.location.href = "https://pay.hub.la/ARX176QDkdSkVfgpXqIb"}
             >
               <span className="flex items-center justify-center gap-2">
                 Garantir Minha Vaga Agora

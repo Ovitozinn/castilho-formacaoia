@@ -97,7 +97,7 @@ const CoursesSection = () => {
 
           <div className="text-center">
             <CTAButton 
-              onClick={() => window.location.href = "https://pay.kirvano.com/186d210d-4150-4fb3-9643-fc870759dda3"}
+              onClick={() => window.location.href = "https://pay.hub.la/ARX176QDkdSkVfgpXqIb"}
               className="text-base md:text-lg px-6 md:px-8 py-3 md:py-4 w-full md:w-auto animate-bounce hover:scale-105 transition-transform duration-300"
             >
               Garantir Minha Vaga Agora
