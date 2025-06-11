@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -25,17 +26,17 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#9b87f5",
-          hover: "#8b75f3",
-          foreground: "#FFFFFF",
+          DEFAULT: "#00FF41",
+          hover: "#00E63A",
+          foreground: "#000000",
         },
         dark: {
           DEFAULT: "#1A1F2C",
           lighter: "#2A2F3C",
         },
         cyber: {
-          blue: "#00F5FF",
-          purple: "#FF00FF",
+          blue: "#00FF41",
+          purple: "#00FF41",
           dark: "#2A2D3E",
         },
       },

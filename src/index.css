@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,7 +42,7 @@ html {
   @apply backdrop-blur-md bg-white/10 border border-white/20;
 }
 
-/* Gradient text utility */
+/* Gradient text utility with neon green */
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-hover;
 }
