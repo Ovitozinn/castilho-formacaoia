@@ -30,7 +30,7 @@ const HeroSection = () => {
         </p>
         
         <div className="video-wrapper mt-8 mb-10 max-w-[720px] w-full mx-auto">
-          <iframe src="https://www.loom.com/share/b984d14da64e46edb6afa46ced75f802?sid=87eb0792-0427-4a69-84dd-2208ac4d181d"
+          <iframe src="https://www.loom.com/embed/b984d14da64e46edb6afa46ced75f802?sid=87eb0792-0427-4a69-84dd-2208ac4d181d"
                   className="w-full aspect-video rounded-lg shadow-xl"
                   aria-label="Vídeo explicativo"
                   allowFullScreen></iframe>
