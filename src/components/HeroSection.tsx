@@ -22,7 +22,7 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
           Monte agentes de IA que vendem por você e cobram até 10&nbsp;mil&nbsp;reais
           <br />
-          <span className="hero-dash">—</span> <span className="text-green">mesmo começando do zero.</span>
+          <span className="hero-dash"></span> <span className="text-green">mesmo começando do zero.</span>
         </h1>
         
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in">
