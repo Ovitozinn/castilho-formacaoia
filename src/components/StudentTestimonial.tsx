@@ -38,8 +38,8 @@ const StudentTestimonial = () => {
           {/* CARD 2 */}
           <article className="glass rounded-lg p-6 space-y-4">
             <img 
-              src="/lovable-uploads/70cc523a-a30f-4ade-aa97-aafcde8a4d34.png"
-              alt="Feedback 2 – WhatsApp do João"
+              src="/lovable-uploads/d3916db7-3cd1-492a-9a8e-f5e7c95fba7a.png"
+              alt="Feedback 2 – WhatsApp do Michael"
               className="rounded-md w-full"
             />
             <p className="italic text-gray-300 leading-relaxed">
@@ -54,8 +54,8 @@ const StudentTestimonial = () => {
           {/* CARD 3 */}
           <article className="glass rounded-lg p-6 space-y-4">
             <img 
-              src="/lovable-uploads/d3916db7-3cd1-492a-9a8e-f5e7c95fba7a.png"
-              alt="Feedback 3 – WhatsApp do Michael"
+              src="/lovable-uploads/70cc523a-a30f-4ade-aa97-aafcde8a4d34.png"
+              alt="Feedback 3 – WhatsApp do João"
               className="rounded-md w-full"
             />
             <p className="italic text-gray-300 leading-relaxed">
