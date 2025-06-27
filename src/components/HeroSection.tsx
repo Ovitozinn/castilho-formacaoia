@@ -4,7 +4,7 @@ import CTAButton from "./CTAButton";
 
 const HeroSection = () => {
   const scrollToOffer = () => {
-    const offerSection = document.getElementById('main-offer');
+    const offerSection = document.getElementById('courses-section');
     offerSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -36,7 +36,7 @@ const HeroSection = () => {
                   allowFullScreen></iframe>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in mb-16">
           <CTAButton onClick={scrollToOffer}>Quero começar agora</CTAButton>
         </div>
       </div>
