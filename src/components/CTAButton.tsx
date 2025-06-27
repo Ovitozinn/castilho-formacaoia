@@ -1,3 +1,4 @@
+
 import { ButtonHTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
 
@@ -14,7 +15,7 @@ const CTAButton = ({
   return (
     <button
       className={cn(
-        "px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105",
+        "px-12 py-6 rounded-lg text-xl font-bold transition-all duration-300 transform hover:scale-105",
         variant === "primary" 
           ? "bg-primary text-white hover:bg-primary-hover shadow-lg hover:shadow-xl" 
           : "bg-white/10 text-white backdrop-blur-sm hover:bg-white/20",
