@@ -26,7 +26,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in">
-          A formação definitiva pra quem quer sair do operacional, fechar contratos e dominar a nova era da inteligência artificial sem programar nada.
+          A formação definitiva pra quem quer sair do operacional, fechar contratos em menos tempo e dominar a nova era da inteligência artificial sem programar nada.
         </p>
         
         <div className="video-wrapper mt-8 mb-10 max-w-[720px] w-full mx-auto">
