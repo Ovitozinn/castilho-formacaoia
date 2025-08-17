@@ -22,7 +22,7 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
           Agentes de IA que fazem o trabalho sujo no seu lugar
           <br />
-          <span className="hero-dash"></span> <span className="text-green"> — e você cobra caro por isso.</span>
+          <span className="hero-dash"></span> <span className="text-green">e você cobra caro por isso.</span>
         </h1>
         
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in">
