@@ -48,7 +48,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto animate-fade-in">
-            Você não precisa programar nada. Só seguir o método, montar o agente e entregar. O mercado já tá pagando caro por isso.
+            Você não precisa programar nada. Só seguir o método, adaptar e entregar. O mercado já tá pagando caro por isso.
           </p>
           
           <div className="video-wrapper mt-8 mb-10 max-w-[720px] w-full mx-auto">

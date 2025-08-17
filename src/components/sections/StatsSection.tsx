@@ -61,7 +61,7 @@ const StatsSection = () => {
                 </div>
                 <div className="text-lg text-gray-100 space-y-3">
                   <p>O mercado está mudando numa <span className="text-red-400 font-bold">velocidade brutal</span>.</p>
-                  <p>Gestores de Tráfego; Social Media; Copywriters e mais 18 outas profissões hoje fazem funções que</p>
+                  <p><span className="text-red-400 font-bold">Gestores de Tráfego - Social Media - Copywriters</span>.</p><p>e mais 18 outas profissões hoje fazem funções que</p>
                   <p><span className="text-yellow-400 font-bold">Amanhã um agente de IA faz em segundos</span>.</p>
                 </div>
               </div>
@@ -74,8 +74,8 @@ const StatsSection = () => {
                 <div className="text-lg text-gray-100 space-y-3">
                   <p>E sabe o que é <span className="text-red-400 font-bold">pior</span>?</p>
                   <div className="space-y-2 ml-4">
-                    <p><span className="text-green-400">👉</span> Empresas vão preferir pagar <span className="text-green-400 font-bold">5 a 10 mil</span> pra quem monta esses agentes…</p>
-                    <p><span className="text-red-400">👉</span> Do que continuar contratando gente que só <span className="text-red-400 font-bold">"executa tarefa"</span>.</p>
+                    <p><span className="text-green-400">👉</span> Empresas vão preferir pagar <span className="text-green-400 font-bold">10 a 30 mil</span> pra quem monta esses agentes…</p>
+                    <p><span className="text-red-400">👉</span> Do que continuar contratando diversas pessoas que só <span className="text-red-400 font-bold">"executam tarefa"</span>.</p>
                   </div>
                 </div>
               </div>
@@ -86,27 +86,27 @@ const StatsSection = () => {
                   {'>'} DECISAO_CRITICA_DETECTADA...
                 </div>
                 <div className="text-xl text-center text-white font-bold mb-6">
-                  VOCÊ TEM DUAS OPÇÕES:
+                  EXISTEM 2 TIPOS DE PESSOAS:
                 </div>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="border border-green-500/30 bg-green-900/20 p-6 rounded-lg">
                     <div className="flex items-center gap-3 mb-4">
                       <Target className="w-6 h-6 text-green-400" />
-                      <span className="text-green-400 font-bold">OPÇÃO 1: DOMINAR</span>
+                      <span className="text-green-400 font-bold">QUEM DECIDIU:</span>
                     </div>
                     <p className="text-gray-100">
-                      Dominar a IA agora e vender soluções que o mercado <span className="text-green-400 font-bold">implora</span>.
+                      Faturar muito com IA vendendo soluções que o mercado <span className="text-green-400 font-bold">implora</span>.
                     </p>
                   </div>
 
                   <div className="border border-red-500/30 bg-red-900/20 p-6 rounded-lg">
                     <div className="flex items-center gap-3 mb-4">
                       <Skull className="w-6 h-6 text-red-400" />
-                      <span className="text-red-400 font-bold">OPÇÃO 2: MORRER</span>
+                      <span className="text-red-400 font-bold">QUEM FICA ASSISTINDO</span>
                     </div>
                     <p className="text-gray-100">
-                      Ficar preso no operacional, vendo sua função ser <span className="text-red-400 font-bold">engolida</span> e o cliente escolher outro.
+                      Ficar preso no operacional, vendo sua função ser <span className="text-red-400 font-bold">engolida</span> e o cliente trocar 5 pessoas por 1 que entende de IA.
                     </p>
                   </div>
                 </div>
