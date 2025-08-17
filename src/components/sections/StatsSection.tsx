@@ -4,13 +4,13 @@ import { Skull, AlertTriangle, Target, Zap } from 'lucide-react';
 const StatsSection = () => {
   return (
     <section className="py-16 md:py-24 px-4 relative overflow-hidden">
-      {/* Matrix background effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-red-950/20 to-black opacity-95" />
-      <div className="absolute inset-0 opacity-5">
-        <div className="text-red-500/40 font-mono text-xs leading-3 whitespace-pre-wrap overflow-hidden animate-pulse">
-          {Array.from({ length: 30 }, (_, i) => (
-            <div key={i} className="animate-fade-in" style={{ animationDelay: `${i * 0.15}s` }}>
-              {Math.random().toString(36).substring(7)} REPLACE HUMAN {Math.random().toString(36).substring(7)} AI TAKEOVER {Math.random().toString(36).substring(7)}
+      {/* Matrix background effect - mais sutil */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black via-red-950/10 to-black opacity-95" />
+      <div className="absolute inset-0 opacity-3">
+        <div className="text-red-500/20 font-mono text-xs leading-4 whitespace-pre-wrap overflow-hidden">
+          {Array.from({ length: 15 }, (_, i) => (
+            <div key={i} className="animate-fade-in" style={{ animationDelay: `${i * 0.3}s` }}>
+              {Math.random().toString(36).substring(7)} REPLACE {Math.random().toString(36).substring(7)} AI TAKEOVER {Math.random().toString(36).substring(7)}
             </div>
           ))}
         </div>
@@ -21,7 +21,7 @@ const StatsSection = () => {
           {/* Terminal header */}
           <div className="bg-gray-900 border border-red-500/30 rounded-t-lg p-4 mb-0">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
               <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
               <div className="w-3 h-3 bg-green-500 rounded-full"></div>
               <span className="text-red-400 font-mono text-sm ml-4">sistema@mercado_ia:~$ ALERTA_CRITICO</span>
@@ -31,17 +31,14 @@ const StatsSection = () => {
           {/* Main content */}
           <div className="bg-black/90 border-x border-b border-red-500/30 rounded-b-lg p-8 md:p-12 backdrop-blur-sm">
             <div className="text-center mb-8">
-              {/* Glitch effect title */}
+              {/* Título limpo sem sobreposição */}
               <div className="relative mb-6">
-                <h2 className="text-3xl md:text-5xl font-bold text-red-400 font-mono relative animate-fade-in leading-tight">
+                <h2 className="text-3xl md:text-5xl font-bold text-red-400 font-mono animate-fade-in leading-tight">
                   IGNORAR A IA HOJE É ASSINAR
                   <br />
                   <span className="text-white">SUA SENTENÇA DE MORTE</span>
                   <br />
                   <span className="text-red-300">NO MERCADO.</span>
-                  <span className="absolute inset-0 text-red-300 opacity-50 animate-pulse">
-                    IGNORAR A IA HOJE É ASSINAR SUA SENTENÇA DE MORTE NO MERCADO.
-                  </span>
                 </h2>
               </div>
 
@@ -117,7 +114,7 @@ const StatsSection = () => {
 
               {/* Final warning */}
               <div className="border border-red-600 bg-red-900/30 p-8 rounded-lg animate-fade-in text-center" style={{ animationDelay: '0.6s' }}>
-                <AlertTriangle className="w-12 h-12 text-red-400 mx-auto mb-4 animate-pulse" />
+                <AlertTriangle className="w-12 h-12 text-red-400 mx-auto mb-4" />
                 <div className="text-2xl font-bold text-white mb-4">
                   NÃO EXISTE MEIO-TERMO.
                 </div>
