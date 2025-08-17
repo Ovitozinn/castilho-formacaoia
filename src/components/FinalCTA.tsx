@@ -28,11 +28,9 @@ const FinalCTA = () => {
             {[
               "Acesso vitalício a todo conteúdo",
               "Bônus exclusivos",
-              "Atualizações gratuitas",
               "Templates liberados",
               "Aulas do básico ao avançado",
               "Monetização (como ganhar dinheiro com isso)",
-              "Módulo de prospecção e vendas",
               "Criando sua automação do zero"
             ].map((benefit, index) => (
               <div 
