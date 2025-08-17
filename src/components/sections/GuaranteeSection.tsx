@@ -50,12 +50,12 @@ const GuaranteeSection = () => {
                 
                 <div className="text-lg md:text-xl text-gray-100 leading-relaxed space-y-4 animate-fade-in">
                   <p>
-                    <span className="text-green-400 font-semibold">Sou obrigado por lei</span> a te dar 7 dias de garantia, 
-                    porém <span className="text-green-400 font-semibold">eu faço melhor que isso!</span>
+                    <span className="text-green-400 font-semibold">Confio tanto no meu produto que </span> e garanto 7 dias de garantia. Você pode acessar, analisar todo o conteúdo com calma. 
+                    <span className="text-green-400 font-semibold">E se não for o que espera, ter seu reembolso no mesmo momento, sem perguntas, sem burocracia.</span>
                   </p>
                   
                   <p>
-                    Se você comprar a formação e <span className="text-red-400 font-semibold">não conseguir montar seu primeiro agente</span>, 
+                    Se você comprar a formação e <span className="text-red-400 font-semibold">E melhor que isso! Se você não conseguir montar seu primeiro agente</span>, 
                     eu <span className="text-green-400 font-semibold">devolvo seu dinheiro</span> e ainda te dou uma 
                     <span className="text-yellow-400 font-semibold"> mentoria individual</span>, que o plano mais básico custa 
                     <span className="text-green-400 font-semibold"> R$ 1.997</span>.
