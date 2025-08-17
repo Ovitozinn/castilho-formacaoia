@@ -61,7 +61,7 @@ const StatsSection = () => {
                 </div>
                 <div className="text-lg text-gray-100 space-y-3">
                   <p>O mercado está mudando numa <span className="text-red-400 font-bold">velocidade brutal</span>.</p>
-                  <p>Tarefas que hoje você faz manualmente…</p>
+                  <p>Gestores de Tráfego; Social Media; Copywriters e mais 18 outas profissões hoje fazem funções que</p>
                   <p><span className="text-yellow-400 font-bold">Amanhã um agente de IA faz em segundos</span>.</p>
                 </div>
               </div>
