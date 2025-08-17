@@ -7,6 +7,7 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import StatsSection from "@/components/sections/StatsSection";
 import PricingExplanation from "@/components/sections/PricingExplanation";
 import CoursesSection from "@/components/sections/CoursesSection";
+import GuaranteeSection from "@/components/sections/GuaranteeSection";
 import YouTubeSection from "@/components/sections/YouTubeSection";
 import DevelopmentTimeline from "@/components/DevelopmentTimeline";
 
@@ -20,6 +21,7 @@ const Index = () => {
         <div id="main-offer">
           <StatsSection />
           <DevelopmentTimeline />
+          <GuaranteeSection />
           <CoursesSection />
           <CastilhoBio />
           <StudentTestimonial />
