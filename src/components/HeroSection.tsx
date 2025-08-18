@@ -42,7 +42,7 @@ const HeroSection = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in font-mono">
-            Descubra como pessoas comuns estão faturando pelo menos 15K por mês
+            Descubra como pessoas comuns estão faturando pelo menos R$15 Mil por mês
             <br />
             <span className="hero-dash"></span> <span className="text-green-400">apenas replicando automações prontas.</span>
           </h1>
