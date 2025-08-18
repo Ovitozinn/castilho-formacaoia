@@ -52,14 +52,22 @@ const AgentShowcaseSection = () => {
           </div>
 
           {/* Agent showcase area with image */}
-          <div className="relative mb-12 md:mb-16 h-96 md:h-[500px] rounded-xl overflow-hidden border border-green-500/30 bg-gray-900/50">
-            {/* Background image with full opacity */}
-            <div 
-              className="absolute inset-0 bg-cover bg-center"
-              style={{ 
-                backgroundImage: "url('/lovable-uploads/5b0a6b5c-594b-4a06-8908-cc42cc36c757.png')"
-              }}
+          <div className="relative mb-12 md:mb-16 rounded-xl overflow-hidden border border-green-500/30 bg-gray-900/50">
+            {/* Background image with full opacity and complete view */}
+            <img 
+              src="/lovable-uploads/5b0a6b5c-594b-4a06-8908-cc42cc36c757.png" 
+              alt="Agente de IA Workflow"
+              className="w-full h-auto object-contain"
             />
+          </div>
+
+          {/* Mensagem sobre simplicidade */}
+          <div className="text-center mb-8 md:mb-12">
+            <div className="inline-block bg-gray-900/80 border border-green-500/30 rounded-xl p-6 md:p-8 mb-8">
+              <p className="text-lg md:text-xl text-green-300 italic font-mono">
+                "Você não precisa de fluxos gigantes igual vê gurus falando por aí, só precisa entender e aplicar o que gera resultado de verdade."
+              </p>
+            </div>
           </div>
 
           {/* Description and features */}
