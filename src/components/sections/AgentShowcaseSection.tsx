@@ -2,6 +2,7 @@ import { Bot, DollarSign, MessageCircle, Target } from "lucide-react";
 import CTAButton from "../CTAButton";
 
 const AgentShowcaseSection = () => {
+  console.log("AgentShowcaseSection está sendo renderizada!");
   const notifications = [
     { text: "Pix recebido R$ 2.000", delay: "0s", position: "top-10 left-10" },
     { text: "Transferência recebida R$ 4.800", delay: "0.5s", position: "top-20 right-20" },
@@ -14,7 +15,9 @@ const AgentShowcaseSection = () => {
   ];
 
   return (
-    <section id="agent-showcase" className="py-16 md:py-24 px-4 relative overflow-hidden">
+    <section id="agent-showcase" className="py-16 md:py-24 px-4 relative overflow-hidden min-h-screen"
+      style={{ background: '#000000', zIndex: 1 }}
+    >
       {/* Matrix background */}
       <div className="absolute inset-0 bg-black" />
       <div className="absolute inset-0 opacity-5">

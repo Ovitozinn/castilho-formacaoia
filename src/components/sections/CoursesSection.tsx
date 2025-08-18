@@ -122,7 +122,16 @@ const CoursesSection = () => {
               {/* Templates liberados como botão especial */}
               <div className="md:col-span-2">
                 <button
-                  onClick={() => document.getElementById('agent-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => {
+                    console.log("Botão clicado! Navegando para agent-showcase");
+                    const element = document.getElementById('agent-showcase');
+                    console.log("Elemento encontrado:", element);
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    } else {
+                      console.error("Elemento agent-showcase não encontrado!");
+                    }
+                  }}
                   className="w-full flex items-center gap-2 md:gap-3 p-4 md:p-6 border-2 border-green-400 bg-green-500/10 rounded-lg hover:bg-green-500/20 hover:border-green-300 transition-all duration-300 group cursor-pointer"
                 >
                   <Check className="w-5 h-5 md:w-6 md:h-6 text-green-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
