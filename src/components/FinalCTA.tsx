@@ -48,12 +48,12 @@ const FinalCTA = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-8 md:mb-12 mx-auto max-w-3xl">
               {[
-                "Acesso vitalício a todo conteúdo",
+                "Comunidade Aberta no WhatsApp",
                 "Bônus exclusivos",
-                "Templates liberados",
                 "Aulas do básico ao avançado",
                 "Monetização (como ganhar dinheiro com isso)",
-                "Criando sua automação do zero"
+                "Criando sua automação do zero",
+                "Projetos reais que o mercado busca"
               ].map((benefit, index) => (
                 <div 
                   key={index}
