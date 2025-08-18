@@ -104,7 +104,6 @@ const CoursesSection = () => {
 
             <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
               {[
-                "Acesso vitalício a todo conteúdo",
                 "Bônus exclusivos",
                 "Aulas do básico ao avançado",
                 "Monetização (como ganhar dinheiro com isso)",
