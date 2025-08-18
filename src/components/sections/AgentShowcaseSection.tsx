@@ -51,48 +51,15 @@ const AgentShowcaseSection = () => {
             </h2>
           </div>
 
-          {/* Agent showcase area with image and notifications */}
+          {/* Agent showcase area with image */}
           <div className="relative mb-12 md:mb-16 h-96 md:h-[500px] rounded-xl overflow-hidden border border-green-500/30 bg-gray-900/50">
-            {/* Background image with opacity */}
+            {/* Background image with full opacity */}
             <div 
-              className="absolute inset-0 bg-cover bg-center opacity-80"
+              className="absolute inset-0 bg-cover bg-center"
               style={{ 
-                backgroundImage: "url('/lovable-uploads/5b0a6b5c-594b-4a06-8908-cc42cc36c757.png')",
-                filter: "brightness(0.7) contrast(1.2)"
+                backgroundImage: "url('/lovable-uploads/5b0a6b5c-594b-4a06-8908-cc42cc36c757.png')"
               }}
             />
-            
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/40" />
-            
-            {/* Central AI Robot */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative">
-                <div className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-2xl animate-pulse">
-                  <Bot className="w-12 h-12 md:w-16 md:h-16 text-black" />
-                </div>
-                
-                {/* Pulsing rings */}
-                <div className="absolute inset-0 rounded-full border-2 border-green-400/50 animate-ping"></div>
-                <div className="absolute inset-[-10px] rounded-full border border-green-400/30 animate-ping" style={{ animationDelay: "0.5s" }}></div>
-              </div>
-            </div>
-
-            {/* Floating notifications */}
-            {notifications.map((notification, index) => (
-              <div
-                key={index}
-                className={`absolute ${notification.position} animate-fade-in`}
-                style={{ animationDelay: notification.delay, animationDuration: "0.8s" }}
-              >
-                <div className="bg-green-500/90 text-black px-3 py-2 rounded-lg font-mono text-sm font-semibold shadow-lg border border-green-400 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
-                  <div className="flex items-center gap-2">
-                    <DollarSign className="w-4 h-4" />
-                    {notification.text}
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
 
           {/* Description and features */}
