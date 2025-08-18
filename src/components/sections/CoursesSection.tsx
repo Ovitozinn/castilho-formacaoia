@@ -106,7 +106,6 @@ const CoursesSection = () => {
               {[
                 "Acesso vitalício a todo conteúdo",
                 "Bônus exclusivos",
-                "Templates liberados",
                 "Aulas do básico ao avançado",
                 "Monetização (como ganhar dinheiro com isso)",
                 "Criando sua automação do zero"
@@ -119,8 +118,21 @@ const CoursesSection = () => {
                   <span className="text-sm md:text-base text-gray-200">{benefit}</span>
                 </div>
               ))}
+              
+              {/* Templates liberados como botão especial */}
+              <div className="md:col-span-2">
+                <button
+                  onClick={() => document.getElementById('agent-showcase')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="w-full flex items-center gap-2 md:gap-3 p-4 md:p-6 border-2 border-green-400 bg-green-500/10 rounded-lg hover:bg-green-500/20 hover:border-green-300 transition-all duration-300 group cursor-pointer"
+                >
+                  <Check className="w-5 h-5 md:w-6 md:h-6 text-green-400 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <span className="text-base md:text-lg text-green-300 font-semibold group-hover:text-green-200">
+                    🎯 Templates liberados - Veja o que você pode criar!
+                  </span>
+                  <div className="ml-auto text-green-400 group-hover:translate-x-1 transition-transform">→</div>
+                </button>
+              </div>
             </div>
-
             <div className="text-center">
               <CTAButton 
                 onClick={() => window.location.href = "https://pay.hub.la/ARX176QDkdSkVfgpXqIb"}

@@ -8,6 +8,7 @@ import StatsSection from "@/components/sections/StatsSection";
 import CoursesSection from "@/components/sections/CoursesSection";
 import GuaranteeSection from "@/components/sections/GuaranteeSection";
 import YouTubeSection from "@/components/sections/YouTubeSection";
+import AgentShowcaseSection from "@/components/sections/AgentShowcaseSection";
 import DevelopmentTimeline from "@/components/DevelopmentTimeline";
 
 const Index = () => {
@@ -25,6 +26,7 @@ const Index = () => {
           <CastilhoBio />
           <StudentTestimonial />
           <YouTubeSection />
+          <AgentShowcaseSection />
           <FinalCTA />
         </div>
       </div>
