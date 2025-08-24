@@ -10,6 +10,10 @@ import GuaranteeSection from "@/components/sections/GuaranteeSection";
 import YouTubeSection from "@/components/sections/YouTubeSection";
 import AgentShowcaseSection from "@/components/sections/AgentShowcaseSection";
 import DevelopmentTimeline from "@/components/DevelopmentTimeline";
+import SpecificProofSection from "@/components/SpecificProofSection";
+import ImagineSection from "@/components/ImagineSection";
+import ObjectionsFAQ from "@/components/ObjectionsFAQ";
+import StickyCTA from "@/components/StickyCTA";
 
 const Index = () => {
   return (
@@ -18,17 +22,21 @@ const Index = () => {
       
       <div className="relative z-10">
         <HeroSection />
+        <SpecificProofSection />
         <div id="main-offer">
           <StatsSection />
+          <ImagineSection />
           <DevelopmentTimeline />
           <GuaranteeSection />
           <CoursesSection />
+          <ObjectionsFAQ />
           <StudentTestimonial />
           <CastilhoBio />
           <YouTubeSection />
           <AgentShowcaseSection />
           <FinalCTA />
         </div>
+        <StickyCTA />
       </div>
     </div>
   );
