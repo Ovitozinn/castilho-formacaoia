@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Code, Brain, ArrowRight, DollarSign, CheckCircle } from 'lucide-react';
+import { Shield, Code, Brain, ArrowRight } from 'lucide-react';
 
 const GuaranteeSection = () => {
   return (
@@ -49,17 +49,16 @@ const GuaranteeSection = () => {
                 </div>
                 
                 <div className="text-lg md:text-xl text-gray-100 leading-relaxed space-y-4 animate-fade-in">
-                  <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-                    <strong className="text-white">GARANTIA TRIPLA:</strong> Se em 7 dias você não estiver satisfeito, devolvemos <strong className="text-green-400">DOBRO</strong> do seu dinheiro + uma mentoria VIP de R$ 1.997 + acesso vitalício aos templates.
+                  <p>
+                    <span className="text-green-400 font-semibold">Confio tanto no meu produto que </span> e garanto 7 dias de garantia. Você pode acessar, analisar todo o conteúdo com calma. 
+                    <span className="text-green-400 font-semibold">E se não for o que espera, ter seu reembolso no mesmo momento, sem perguntas, sem burocracia.</span>
                   </p>
                   
                   <p>
-                    <span className="text-green-400 font-semibold">É isso mesmo que você leu:</span> Além de devolver seu dinheiro em dobro, você ainda ganha uma mentoria individual completa e fica com todos os templates para sempre.
-                  </p>
-                  
-                  <p>
-                    <span className="text-red-400 font-semibold">Por que fazemos isso?</span> Porque sabemos que nosso método funciona. 
-                    <span className="text-green-400 font-semibold">127 pessoas já provaram</span> que é possível faturar R$ 15k+ seguindo exatamente o que ensinamos.
+                    Se você comprar a formação e <span className="text-red-400 font-semibold">E melhor que isso! Se você não conseguir montar seu primeiro agente</span>, 
+                    eu <span className="text-green-400 font-semibold">devolvo seu dinheiro</span> e ainda te dou uma 
+                    <span className="text-yellow-400 font-semibold"> mentoria individual</span>, que o plano mais básico custa 
+                    <span className="text-green-400 font-semibold"> R$ 1.997</span>.
                   </p>
                 </div>
 
@@ -73,18 +72,18 @@ const GuaranteeSection = () => {
                 {[
                   {
                     icon: Shield,
-                    title: "DOBRO do dinheiro de volta",
-                    description: "Em 7 dias, sem perguntas"
+                    title: "7 DIAS + EXTRA",
+                    description: "Garantia legal + bônus exclusivo"
                   },
                   {
-                    icon: DollarSign,
-                    title: "Mentoria VIP R$ 1.997",
-                    description: "Grátis mesmo se pedir reembolso"
+                    icon: Brain,
+                    title: "MENTORIA R$ 1.997",
+                    description: "Grátis se não conseguir resultado"
                   },
                   {
-                    icon: CheckCircle,
-                    title: "Acesso Vitalício",
-                    description: "Mesmo se pedir reembolso, é seu"
+                    icon: Code,
+                    title: "100% SEGURO",
+                    description: "Dinheiro de volta garantido"
                   }
                 ].map((feature, index) => (
                   <div 
