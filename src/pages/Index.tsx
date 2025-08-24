@@ -23,8 +23,8 @@ const Index = () => {
           <DevelopmentTimeline />
           <GuaranteeSection />
           <CoursesSection />
-          <CastilhoBio />
           <StudentTestimonial />
+          <CastilhoBio />
           <YouTubeSection />
           <AgentShowcaseSection />
           <FinalCTA />
