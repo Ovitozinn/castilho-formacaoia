@@ -3,30 +3,30 @@ import { Star, TrendingUp, DollarSign } from "lucide-react";
 const SpecificProofSection = () => {
   const proofs = [
     {
-      name: "Daniel Ferreira",
-      age: "29 anos",
+      name: "Leonardo Peralta",
+      age: "21 anos",
       profession: "Empreendedor",
-      result: "R$ 200.000+",
-      time: "em 3 meses",
-      story: "Começou esse ano saindo do zero. Em menos de 3 meses já faturou mais de 200K apenas com IA.",
+      result: "R$ 10.000+ LTV de R$36.000",
+      time: "em 2 meses",
+      story: "Tinha um possível cliente mas não sabia como implementar os projetos corretamente",
       videoId: "d_OXc3J4VY0"
     },
     {
-      name: "Thierry Gustavo", 
-      age: "31 anos",
-      profession: "Especialista em IA",
-      result: "R$ 10.000+",
+      name: "Daniel Ferreira", 
+      age: "19 anos",
+      profession: "Empreendedor",
+      result: "R$ 230.000+ e 25 clientes ativos pagando R$1.100 mês (cada um)",
       time: "LTV do 1º contrato",
-      story: "Fechou seu primeiro contrato com LTV (Lifetime Value) maior que 10K aplicando as estratégias da comunidade.",
+      story: "Saiu do total zero, em março iniciou sua jornada conosco, logo já fechou seus primeiros contratos e criou uma operação completa",
       videoId: "Ys6uopUc67g"
     },
     {
-      name: "Leonardo Peralta",
-      age: "27 anos",
-      profession: "Consultor de Automação",
-      result: "R$ 10.000+",
+      name: "Thierry Gustavo",
+      age: "20 anos",
+      profession: "Gestor de Automação",
+      result: "R$ 2.200 no primeiro contrato",
       time: "em 2 meses",
-      story: "Em menos de 2 meses de acompanhamento fechou 3 contratos - mais de 10K de faturamento.",
+      story: "Em menos de 2 meses aprimorou seus conhecimentos e conseguiu seu primeiro projeto",
       videoId: "lON-WbHtcE4"
     }
   ];
