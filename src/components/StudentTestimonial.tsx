@@ -3,20 +3,26 @@ import { Heart, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 const StudentTestimonial = () => {
-  const [currentVideo, setCurrentVideo] = useState(2); // Start with last video as main
+  const [currentVideo, setCurrentVideo] = useState(1); // Start with central video (Thierry) as main
 
   const videos = [
     {
       id: "d_OXc3J4VY0",
-      title: "Sucesso da Comunidade 1"
+      title: "Daniel Ferreira - 200K em 3 meses",
+      name: "Daniel Ferreira",
+      achievement: "começou esse ano e em menos de 3 meses já faturou mais de 200K, saindo do zero"
     },
     {
       id: "Ys6uopUc67g", 
-      title: "Sucesso da Comunidade 2"
+      title: "Thierry Gustavo - LTV +10K",
+      name: "Thierry Gustavo", 
+      achievement: "fechou primeiro contrato com LTV maior que 10K"
     },
     {
       id: "lON-WbHtcE4",
-      title: "Sucesso da Comunidade 3"
+      title: "Leonardo Peralta - 3 contratos +10K",
+      name: "Leonardo Peralta",
+      achievement: "em menos de 2 meses de acompanhamento fechou 3 contratos - mais de 10K de faturamento"
     }
   ];
 
@@ -69,6 +75,10 @@ const StudentTestimonial = () => {
                   allowFullScreen
                 />
               </div>
+              <div className="text-center mt-2">
+                <p className="text-green-400 font-semibold text-sm">{videos[(currentVideo - 1 + videos.length) % videos.length].name}</p>
+                <p className="text-gray-300 text-xs px-2">{videos[(currentVideo - 1 + videos.length) % videos.length].achievement}</p>
+              </div>
             </div>
 
             {/* Navigation Button Left */}
@@ -90,6 +100,10 @@ const StudentTestimonial = () => {
                   allowFullScreen
                 />
               </div>
+              <div className="text-center mt-4">
+                <p className="text-green-400 font-bold text-lg">{videos[currentVideo].name}</p>
+                <p className="text-gray-300 text-sm max-w-xs mx-auto">{videos[currentVideo].achievement}</p>
+              </div>
             </div>
 
             {/* Navigation Button Right */}
@@ -110,6 +124,10 @@ const StudentTestimonial = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
+              </div>
+              <div className="text-center mt-2">
+                <p className="text-green-400 font-semibold text-sm">{videos[(currentVideo + 1) % videos.length].name}</p>
+                <p className="text-gray-300 text-xs px-2">{videos[(currentVideo + 1) % videos.length].achievement}</p>
               </div>
             </div>
           </div>

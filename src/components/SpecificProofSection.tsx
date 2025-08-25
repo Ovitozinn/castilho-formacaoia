@@ -3,31 +3,31 @@ import { Star, TrendingUp, DollarSign } from "lucide-react";
 const SpecificProofSection = () => {
   const proofs = [
     {
-      name: "Marcus Silva",
-      age: "28 anos",
-      profession: "Ex-vendedor",
-      result: "R$ 47.300",
-      time: "em 90 dias",
-      story: "Estava desempregado há 6 meses. Hoje tenho 8 clientes fixos pagando R$ 5.900/mês cada um por automações.",
-      image: "/lovable-uploads/22732725-0bc2-4ccd-b573-a92ce2948430.png"
+      name: "Daniel Ferreira",
+      age: "29 anos",
+      profession: "Empreendedor",
+      result: "R$ 200.000+",
+      time: "em 3 meses",
+      story: "Começou esse ano saindo do zero. Em menos de 3 meses já faturou mais de 200K apenas com IA.",
+      videoId: "d_OXc3J4VY0"
     },
     {
-      name: "Ana Carolina",
-      age: "35 anos", 
-      profession: "Mãe e Empreendedora",
-      result: "R$ 23.800",
-      time: "no 1º mês",
-      story: "Começou do zero, sem conhecimento técnico. Criou 3 automações para restaurantes da cidade.",
-      image: "/lovable-uploads/2b838388-adc5-44a9-9a07-87fa9c7a1c50.png"
+      name: "Thierry Gustavo", 
+      age: "31 anos",
+      profession: "Especialista em IA",
+      result: "R$ 10.000+",
+      time: "LTV do 1º contrato",
+      story: "Fechou seu primeiro contrato com LTV (Lifetime Value) maior que 10K aplicando as estratégias da comunidade.",
+      videoId: "Ys6uopUc67g"
     },
     {
-      name: "Roberto Mendes",
-      age: "42 anos",
-      profession: "Contador aposentado",
-      result: "R$ 85.600",
-      time: "em 4 meses",
-      story: "Queria uma renda extra. Hoje trabalha 3h/dia automatizando processos para escritórios contábeis.",
-      image: "/lovable-uploads/70cc523a-a30f-4ade-aa97-aafcde8a4d34.png"
+      name: "Leonardo Peralta",
+      age: "27 anos",
+      profession: "Consultor de Automação",
+      result: "R$ 10.000+",
+      time: "em 2 meses",
+      story: "Em menos de 2 meses de acompanhamento fechou 3 contratos - mais de 10K de faturamento.",
+      videoId: "lON-WbHtcE4"
     }
   ];
 
@@ -50,11 +50,14 @@ const SpecificProofSection = () => {
           {proofs.map((proof, index) => (
             <div key={index} className="bg-black/40 border border-green-500/30 rounded-xl p-6 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300 hover:scale-105">
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src={proof.image} 
-                  alt={proof.name}
-                  className="w-16 h-16 rounded-full object-cover border-2 border-green-400"
-                />
+                <div className="w-16 h-16 bg-gray-800 border-2 border-green-400 rounded-lg overflow-hidden">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${proof.videoId}?controls=0&modestbranding=1&rel=0&start=10`}
+                    title={`Depoimento ${proof.name}`}
+                    className="w-full h-full scale-150"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  />
+                </div>
                 <div>
                   <h3 className="text-xl font-bold text-white">{proof.name}</h3>
                   <p className="text-green-400 text-sm">{proof.age} • {proof.profession}</p>
