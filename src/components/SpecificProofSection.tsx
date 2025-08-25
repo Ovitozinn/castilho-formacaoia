@@ -42,26 +42,32 @@ const SpecificProofSection = () => {
             <span className="text-green-400">127 pessoas</span> já faturam mais de R$ 15k/mês
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Veja 3 casos REAIS de quem saiu do zero e está faturando alto com IA (nomes e resultados verificados)
+            Veja os <span className="text-green-400 font-semibold">VÍDEOS REAIS</span> dos alunos que saíram do zero e estão faturando alto com IA
+          </p>
+          <p className="text-sm text-gray-400 mt-3">
+            📹 Clique nos vídeos abaixo para assistir os depoimentos completos
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {proofs.map((proof, index) => (
-            <div key={index} className="bg-black/40 border border-green-500/30 rounded-xl p-6 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300 hover:scale-105">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 bg-gray-800 border-2 border-green-400 rounded-lg overflow-hidden">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${proof.videoId}?controls=0&modestbranding=1&rel=0&start=10`}
-                    title={`Depoimento ${proof.name}`}
-                    className="w-full h-full scale-150"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">{proof.name}</h3>
-                  <p className="text-green-400 text-sm">{proof.age} • {proof.profession}</p>
-                </div>
+            <div key={index} className="bg-black/40 border border-green-500/30 rounded-xl p-6 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300 hover:scale-105 group">
+              {/* Video Container */}
+              <div className="relative mb-6 rounded-lg overflow-hidden bg-gray-900 border border-green-500/20 aspect-video cursor-pointer group-hover:border-green-400/50 transition-all duration-300">
+                <iframe
+                  src={`https://www.youtube.com/embed/${proof.videoId}?controls=1&modestbranding=1&rel=0`}
+                  title={`Depoimento ${proof.name}`}
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+                <div className="absolute inset-0 bg-green-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              </div>
+
+              {/* Profile Info */}
+              <div className="mb-4">
+                <h3 className="text-xl font-bold text-white mb-1">{proof.name}</h3>
+                <p className="text-green-400 text-sm font-medium">{proof.age} • {proof.profession}</p>
               </div>
               
               <div className="bg-green-600/10 border border-green-500/30 rounded-lg p-4 mb-4">

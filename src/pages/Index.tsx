@@ -1,7 +1,7 @@
 
 import HeroSection from "@/components/HeroSection";
 import CastilhoBio from "@/components/CastilhoBio";
-import StudentTestimonial from "@/components/StudentTestimonial";
+
 import FinalCTA from "@/components/FinalCTA";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import StatsSection from "@/components/sections/StatsSection";
@@ -30,7 +30,6 @@ const Index = () => {
           <GuaranteeSection />
           <CoursesSection />
           <ObjectionsFAQ />
-          <StudentTestimonial />
           <CastilhoBio />
           <YouTubeSection />
           <AgentShowcaseSection />
