@@ -8,15 +8,18 @@ const StudentTestimonial = () => {
   const videos = [
     {
       id: "d_OXc3J4VY0",
-      title: "Sucesso da Comunidade 1"
+      title: "Daniel Ferreira",
+      description: "Começou esse ano e em menos de 3 meses já faturou mais de 200K saindo do zero"
     },
     {
       id: "Ys6uopUc67g", 
-      title: "Sucesso da Comunidade 2"
+      title: "Leonardo Peralta",
+      description: "Em menos de 2 meses de acompanhamento fechou 3 contratos - mais de 10K de faturamento"
     },
     {
       id: "lON-WbHtcE4",
-      title: "Sucesso da Comunidade 3"
+      title: "Thierry Gustavo",
+      description: "Fechou primeiro contrato com LTV maior que 10K"
     }
   ];
 
@@ -90,6 +93,11 @@ const StudentTestimonial = () => {
                   allowFullScreen
                 />
               </div>
+              {/* Video description */}
+              <div className="mt-4 text-center max-w-80">
+                <h3 className="text-green-400 font-mono font-bold text-lg">{videos[currentVideo].title}</h3>
+                <p className="text-gray-300 text-sm mt-2">{videos[currentVideo].description}</p>
+              </div>
             </div>
 
             {/* Navigation Button Right */}
@@ -154,53 +162,52 @@ const StudentTestimonial = () => {
           </h3>
 
           <div className="grid gap-6 md:grid-cols-3">
-            {/* CARD 1 */}
+            {/* CARD 1 - Daniel Ferreira */}
             <article className="border border-green-500/30 bg-gray-900/50 rounded-lg p-6 space-y-4 hover:border-green-400/50 transition-all duration-300">
               <img 
                 src="/lovable-uploads/609d1b63-b530-49dc-9e92-d19f23c91279.png"
-                alt="Feedback 1 – WhatsApp do Lucas"
+                alt="Feedback Daniel Ferreira"
                 className="rounded-md w-full border border-green-500/20"
               />
               <p className="italic text-gray-300 leading-relaxed">
-                "Implementei um agente que tria leads e marca reunião sozinho.
-                Vendi por R$3.500 + R$500/mês. Poucas semanas depois fechei
-                contrato de R$37.000. Com o que o Castilho ensina, vender isso
-                virou fácil."
+                "Começei esse ano do zero total. Em menos de 3 meses seguindo
+                o método do Castilho já faturei mais de 200K. Era impossível
+                imaginar essa transformação tão rápida."
               </p>
-              <p className="font-semibold text-green-400 font-mono">Nathan Almeida</p>
-              <p className="text-xs text-gray-400">Ex-gestor de tráfego</p>
+              <p className="font-semibold text-green-400 font-mono">Daniel Ferreira</p>
+              <p className="text-xs text-gray-400">Iniciante em IA - 200K+ em 3 meses</p>
             </article>
 
-            {/* CARD 2 */}
+            {/* CARD 2 - Leonardo Peralta */}
             <article className="border border-green-500/30 bg-gray-900/50 rounded-lg p-6 space-y-4 hover:border-green-400/50 transition-all duration-300">
               <img 
                 src="/lovable-uploads/d3916db7-3cd1-492a-9a8e-f5e7c95fba7a.png"
-                alt="Feedback 2 – WhatsApp do Michael"
+                alt="Feedback Leonardo Peralta"
                 className="rounded-md w-full border border-green-500/20"
               />
               <p className="italic text-gray-300 leading-relaxed">
-                "Do estoque pra IA em 30 dias. Apresentei meu primeiro pitch,
-                fechei R$5.200 de implementação + R$1.000 por mês. Pedi as contas
-                e nunca mais olhei pra trás."
+                "Em menos de 2 meses de acompanhamento já fechei 3 contratos
+                somando mais de 10K de faturamento. O método funciona mesmo
+                quando você segue certinho."
               </p>
-              <p className="font-semibold text-green-400 font-mono">João Marcos</p>
-              <p className="text-xs text-gray-400">Ex-estoquista</p>
+              <p className="font-semibold text-green-400 font-mono">Leonardo Peralta</p>
+              <p className="text-xs text-gray-400">3 contratos - 10K+ em 2 meses</p>
             </article>
 
-            {/* CARD 3 */}
+            {/* CARD 3 - Thierry Gustavo */}
             <article className="border border-green-500/30 bg-gray-900/50 rounded-lg p-6 space-y-4 hover:border-green-400/50 transition-all duration-300">
               <img 
                 src="/lovable-uploads/70cc523a-a30f-4ade-aa97-aafcde8a4d34.png"
-                alt="Feedback 3 – WhatsApp do João"
+                alt="Feedback Thierry Gustavo"
                 className="rounded-md w-full border border-green-500/20"
               />
               <p className="italic text-gray-300 leading-relaxed">
-                "Fechei meu primeiro contrato de R$4.000 + R$1.000/mês.
-                Apresentei a automação que aprendi na formação e o empresário
-                ficou louco. Hoje aplico isso em todos os meus clientes."
+                "Meu primeiro contrato com IA teve LTV maior que 10K. O que
+                mais me impressiona é como o Castilho simplifica algo que
+                parecia impossível de entender."
               </p>
-              <p className="font-semibold text-green-400 font-mono">Michael</p>
-              <p className="text-xs text-gray-400">Gestor de tráfego</p>
+              <p className="font-semibold text-green-400 font-mono">Thierry Gustavo</p>
+              <p className="text-xs text-gray-400">Primeiro contrato - LTV 10K+</p>
             </article>
           </div>
 
