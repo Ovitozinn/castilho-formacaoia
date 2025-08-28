@@ -50,11 +50,11 @@ const GuaranteeSection = () => {
                 
                 <div className="text-lg md:text-xl text-gray-100 leading-relaxed space-y-4 animate-fade-in">
                   <p className="text-gray-300 mb-8 text-lg leading-relaxed">
-                    <strong className="text-white">GARANTIA TRIPLA:</strong> Se em 7 dias você não estiver satisfeito, devolvemos <strong className="text-green-400">DOBRO</strong> do seu dinheiro + uma mentoria VIP de R$ 1.997 + acesso vitalício aos templates.
+                    <strong className="text-white">GARANTIA INCONDICIONAL:</strong> Se em 7 dias você não estiver satisfeito, devolvemos <strong className="text-green-400">TODO</strong> seu dinheiro - sem burocracia, sem questionamentos.
                   </p>
                   
                   <p>
-                    <span className="text-green-400 font-semibold">É isso mesmo que você leu:</span> Além de devolver seu dinheiro em dobro, você ainda ganha uma mentoria individual completa e fica com todos os templates para sempre.
+                    <span className="text-green-400 font-semibold">E ainda mais:</span> se você finalizar todo o curso, seguir o passo a passo da aula, perguntar no suporte e ainda sim, não conseguir montar um Agente funcional - eu mesmo te dou uma mentoria e monto junto com você.
                   </p>
                   
                   <p>
