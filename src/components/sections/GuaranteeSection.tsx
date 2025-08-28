@@ -73,18 +73,18 @@ const GuaranteeSection = () => {
                 {[
                   {
                     icon: Shield,
-                    title: "DOBRO do dinheiro de volta",
+                    title: "Dinheiro de volta, na hra",
                     description: "Em 7 dias, sem perguntas"
                   },
                   {
                     icon: DollarSign,
                     title: "Mentoria VIP R$ 1.997",
-                    description: "Grátis mesmo se pedir reembolso"
+                    description: "Grátis mesmo se não conseguir evoluir"
                   },
                   {
                     icon: CheckCircle,
-                    title: "Acesso Vitalício",
-                    description: "Mesmo se pedir reembolso, é seu"
+                    title: "Suporte exclusivo",
+                    description: "Aqui você não anda sozinho"
                   }
                 ].map((feature, index) => (
                   <div 
