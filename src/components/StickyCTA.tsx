@@ -22,9 +22,9 @@ const StickyCTA = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isHidden]);
 
-  const scrollToOffer = () => {
-    const offerSection = document.getElementById('courses-section');
-    offerSection?.scrollIntoView({ behavior: 'smooth' });
+  const goToCheckout = () => {
+    // Redirect to checkout page
+    window.location.href = 'https://pay.kiwify.com.br/checkout'; // Replace with your actual checkout URL
   };
 
   const hideCTA = () => {
@@ -53,7 +53,7 @@ const StickyCTA = () => {
             
             <div className="flex items-center gap-4">
               <button
-                onClick={scrollToOffer}
+                onClick={goToCheckout}
                 className="bg-white text-red-600 font-bold px-8 py-3 rounded-lg hover:bg-yellow-400 hover:text-red-700 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg"
               >
                 Garantir minha vaga
