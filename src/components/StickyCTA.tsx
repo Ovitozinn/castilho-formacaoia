@@ -24,7 +24,7 @@ const StickyCTA = () => {
 
   const goToCheckout = () => {
     // Redirect to checkout page
-    window.location.href = 'https://pay.kiwify.com.br/checkout'; // Replace with your actual checkout URL
+    window.location.href = 'https://pay.hub.la/ARX176QDkdSkVfgpXqIb';
   };
 
   const hideCTA = () => {
