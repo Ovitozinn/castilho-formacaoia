@@ -43,7 +43,7 @@ const HeroSection = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in font-mono">
-            Método EXATO que <span className="text-green-400">127 pessoas</span> usaram para faturar <span className="text-green-400">R$15k+ em 30 dias</span> com IA
+            Método EXATO que <span className="text-green-400">127 pessoas</span> utilizam para faturar <span className="text-green-400">R$15k+ em 30 dias</span> com IA
             <br />
             <span className="hero-dash"></span> <span className="text-red-400">(mesmo sem saber programar)</span>
           </h1>
