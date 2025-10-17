@@ -26,9 +26,9 @@ const ParticlesBackground = () => {
       dy: number;
     }> = [];
 
-    // Create particles
+    // Create particles (reduced from 50 to 30 for better performance)
     const createParticles = () => {
-      const particleCount = 50;
+      const particleCount = 30;
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas.width,
@@ -60,16 +60,16 @@ const ParticlesBackground = () => {
         ctx.fillStyle = 'rgba(155, 135, 245, 0.1)';
         ctx.fill();
 
-        // Connect particles
+        // Connect particles (increased distance from 100 to 150 for fewer connections)
         particles.forEach((particle2, j) => {
           if (i === j) return;
           const dx = particle.x - particle2.x;
           const dy = particle.y - particle2.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
 
-          if (distance < 100) {
+          if (distance < 150) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(155, 135, 245, ${0.1 * (1 - distance / 100)})`;
+            ctx.strokeStyle = `rgba(155, 135, 245, ${0.1 * (1 - distance / 150)})`;
             ctx.lineWidth = 0.5;
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(particle2.x, particle2.y);
@@ -93,7 +93,7 @@ const ParticlesBackground = () => {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 pointer-events-none z-0"
-      style={{ background: 'transparent' }}
+      style={{ background: 'transparent', willChange: 'transform' }}
     />
   );
 };

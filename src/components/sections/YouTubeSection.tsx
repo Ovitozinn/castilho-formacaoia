@@ -1,3 +1,5 @@
+import YouTubeFacade from "../YouTubeFacade";
+
 const YouTubeSection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
@@ -5,7 +7,7 @@ const YouTubeSection = () => {
       <div className="absolute inset-0 bg-black" />
       <div className="absolute inset-0 opacity-3">
         <div className="text-green-500/20 font-mono text-xs leading-4 whitespace-pre-wrap overflow-hidden">
-          {Array.from({ length: 10 }, (_, i) => (
+          {Array.from({ length: 5 }, (_, i) => (
             <div key={i} className="animate-fade-in" style={{ animationDelay: `${i * 0.3}s` }}>
               {Math.random().toString(36).substring(7)} VIDEO {Math.random().toString(36).substring(7)}
             </div>
@@ -25,13 +27,11 @@ const YouTubeSection = () => {
           </div>
 
           <div className="border border-green-500/30 bg-gray-900/50 rounded-xl overflow-hidden">
-            <div className="relative pb-[56.25%] h-0">
-              <iframe
-                src="https://www.youtube.com/embed/s6L5JVxGnUU?rel=0&modestbranding=1"
-                title="YouTube video player"
-                className="absolute top-0 left-0 w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+            <div className="relative aspect-video">
+              <YouTubeFacade
+                videoId="s6L5JVxGnUU"
+                title="Veja na Prática - YouTube video"
+                className="absolute top-0 left-0"
               />
             </div>
           </div>

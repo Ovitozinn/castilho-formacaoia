@@ -1,19 +1,20 @@
-
+import { lazy, Suspense } from "react";
 import HeroSection from "@/components/HeroSection";
 import CastilhoBio from "@/components/CastilhoBio";
-
 import FinalCTA from "@/components/FinalCTA";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import StatsSection from "@/components/sections/StatsSection";
 import CoursesSection from "@/components/sections/CoursesSection";
 import GuaranteeSection from "@/components/sections/GuaranteeSection";
-import YouTubeSection from "@/components/sections/YouTubeSection";
-import AgentShowcaseSection from "@/components/sections/AgentShowcaseSection";
 import DevelopmentTimeline from "@/components/DevelopmentTimeline";
 import SpecificProofSection from "@/components/SpecificProofSection";
 import ImagineSection from "@/components/ImagineSection";
-import ObjectionsFAQ from "@/components/ObjectionsFAQ";
 import StickyCTA from "@/components/StickyCTA";
+
+// Lazy load components below the fold for better performance
+const YouTubeSection = lazy(() => import("@/components/sections/YouTubeSection"));
+const AgentShowcaseSection = lazy(() => import("@/components/sections/AgentShowcaseSection"));
+const ObjectionsFAQ = lazy(() => import("@/components/ObjectionsFAQ"));
 
 const Index = () => {
   return (
@@ -29,10 +30,16 @@ const Index = () => {
           <DevelopmentTimeline />
           <GuaranteeSection />
           <CoursesSection />
-          <ObjectionsFAQ />
+          <Suspense fallback={<div className="py-20" />}>
+            <ObjectionsFAQ />
+          </Suspense>
           <CastilhoBio />
-          <YouTubeSection />
-          <AgentShowcaseSection />
+          <Suspense fallback={<div className="py-20" />}>
+            <YouTubeSection />
+          </Suspense>
+          <Suspense fallback={<div className="py-20" />}>
+            <AgentShowcaseSection />
+          </Suspense>
           <FinalCTA />
         </div>
         <StickyCTA />

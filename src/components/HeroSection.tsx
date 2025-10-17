@@ -1,7 +1,7 @@
-
 import { Bot, Brain, Rocket } from "lucide-react";
 import CTAButton from "./CTAButton";
 import UrgencyTimer from "./UrgencyTimer";
+import LoomFacade from "./LoomFacade";
 
 const HeroSection = () => {
   const scrollToOffer = () => {
@@ -15,7 +15,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black" />
       <div className="absolute inset-0 opacity-5">
         <div className="text-green-500/30 font-mono text-xs leading-4 whitespace-pre-wrap overflow-hidden">
-          {Array.from({ length: 20 }, (_, i) => (
+          {Array.from({ length: 10 }, (_, i) => (
             <div key={i} className="animate-fade-in" style={{ animationDelay: `${i * 0.2}s` }}>
               {Math.random().toString(36).substring(7)} AI AGENT {Math.random().toString(36).substring(7)} AUTOMATION {Math.random().toString(36).substring(7)}
             </div>
@@ -56,10 +56,10 @@ const HeroSection = () => {
           
           <div className="video-wrapper mt-8 mb-10 max-w-[720px] w-full mx-auto">
             <div className="border border-green-500/30 rounded-lg p-2 bg-gray-900/50">
-              <iframe src="https://www.loom.com/embed/b984d14da64e46edb6afa46ced75f802?sid=87eb0792-0427-4a69-84dd-2208ac4d181d"
-                      className="w-full aspect-video rounded-lg shadow-xl"
-                      aria-label="Vídeo explicativo"
-                      allowFullScreen></iframe>
+              <LoomFacade
+                loomId="b984d14da64e46edb6afa46ced75f802?sid=87eb0792-0427-4a69-84dd-2208ac4d181d"
+                title="Vídeo explicativo"
+              />
             </div>
           </div>
           

@@ -1,4 +1,5 @@
 import { Star, TrendingUp, DollarSign } from "lucide-react";
+import YouTubeFacade from "./YouTubeFacade";
 
 const SpecificProofSection = () => {
   const proofs = [
@@ -53,15 +54,11 @@ const SpecificProofSection = () => {
           {proofs.map((proof, index) => (
             <div key={index} className="bg-black/40 border border-green-500/30 rounded-xl p-6 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300 hover:scale-105 group">
               {/* Video Container */}
-              <div className="relative mb-6 rounded-lg overflow-hidden bg-gray-900 border border-green-500/20 aspect-video cursor-pointer group-hover:border-green-400/50 transition-all duration-300">
-                <iframe
-                  src={`https://www.youtube.com/embed/${proof.videoId}?controls=1&modestbranding=1&rel=0`}
+              <div className="relative mb-6 rounded-lg overflow-hidden bg-gray-900 border border-green-500/20 aspect-video group-hover:border-green-400/50 transition-all duration-300">
+                <YouTubeFacade
+                  videoId={proof.videoId}
                   title={`Depoimento ${proof.name}`}
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
                 />
-                <div className="absolute inset-0 bg-green-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               </div>
 
               {/* Profile Info */}
