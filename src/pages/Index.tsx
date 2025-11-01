@@ -10,6 +10,7 @@ import DevelopmentTimeline from "@/components/DevelopmentTimeline";
 import SpecificProofSection from "@/components/SpecificProofSection";
 import ImagineSection from "@/components/ImagineSection";
 import StickyCTA from "@/components/StickyCTA";
+import BlackFridayBanner from "@/components/BlackFridayBanner";
 
 // Lazy load components below the fold for better performance
 const YouTubeSection = lazy(() => import("@/components/sections/YouTubeSection"));
@@ -22,6 +23,7 @@ const Index = () => {
       <ParticlesBackground />
       
       <div className="relative z-10">
+        <BlackFridayBanner />
         <HeroSection />
         <SpecificProofSection />
         <div id="main-offer">
