@@ -17,7 +17,7 @@ const BlackFridayBanner = () => {
             <Flame className="w-6 h-6" />
           </div>
           <p className="text-red-500 font-bold text-sm md:text-base mt-2">
-            Condição especial até dia 15/11 • 100 vagas disponíveis (98 restantes) • 70% OFF
+            Condição especial até dia 15/11 • 100 vagas disponíveis (83 restantes) • 70% OFF
           </p>
         </div>
 
