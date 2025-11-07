@@ -46,7 +46,7 @@ const StickyCTA = () => {
                   🔥 Condição de <span className="text-yellow-400">BLACK FRIDAY</span>
                 </p>
                 <p className="text-gray-300 text-sm">
-                  30 vagas disponíveis (23 restantes) - Não perca!
+                  50 vagas disponíveis (21 restantes) - Não perca!
                 </p>
               </div>
             </div>
