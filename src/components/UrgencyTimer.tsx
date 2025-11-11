@@ -56,7 +56,7 @@ const UrgencyTimer = () => {
               {String(timeLeft.seconds).padStart(2, '0')}
             </span>
           </div>
-          <p className="text-xs text-red-300 mt-1">Apenas 11 vagas restantes hoje!</p>
+          <p className="text-xs text-red-300 mt-1">Apenas 11 vagas restantes!</p>
         </div>
         <Flame className="w-6 h-6 text-red-400 animate-bounce" />
       </div>
