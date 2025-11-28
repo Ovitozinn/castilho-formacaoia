@@ -23,7 +23,6 @@ const Index = () => {
       <ParticlesBackground />
       
       <div className="relative z-10">
-        <BlackFridayBanner />
         <HeroSection />
         <SpecificProofSection />
         <div id="main-offer">
