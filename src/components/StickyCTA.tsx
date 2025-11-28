@@ -43,10 +43,10 @@ const StickyCTA = () => {
               <Flame className="w-6 h-6 text-yellow-400 animate-bounce" />
               <div>
                 <p className="text-white font-bold text-lg">
-                  🔥 Condição de <span className="text-yellow-400">BLACK FRIDAY</span>
+                  🔥 Oferta <span className="text-yellow-400">Especial</span>
                 </p>
                 <p className="text-gray-300 text-sm">
-                  50 vagas disponíveis *6 restantes* - Não perca!
+                  Vagas limitadas - Não perca!
                 </p>
               </div>
             </div>
