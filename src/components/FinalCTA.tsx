@@ -67,9 +67,27 @@ const FinalCTA = () => {
             </div>
 
             <div className="mb-8 md:mb-12">
-              <div className="flex items-center justify-center gap-2 md:gap-4 mb-2 md:mb-4">
+              <div className="flex items-center justify-center gap-2 md:gap-4 mb-4">
                 <span className="text-xl md:text-2xl text-gray-400 line-through">R$ 1.997</span>
-                <span className="text-3xl md:text-4xl font-bold text-white">R$ 297</span>
+              </div>
+
+              {/* Destaque do parcelamento */}
+              <div className="bg-gradient-to-r from-green-500/20 via-green-400/20 to-green-500/20 border-2 border-green-400 rounded-2xl p-6 md:p-8 mb-4 mx-auto max-w-md">
+                <p className="text-sm md:text-base text-gray-300 mb-2">12x de</p>
+                <div className="flex items-baseline justify-center gap-2">
+                  <span className="text-5xl md:text-6xl font-black text-green-400">
+                    R$ 50,50
+                  </span>
+                </div>
+                <p className="text-xs md:text-sm text-gray-400 mt-2">no cartão de crédito</p>
+              </div>
+
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <span className="text-xl text-gray-400">ou</span>
+              </div>
+
+              <div className="flex items-center justify-center">
+                <span className="text-3xl md:text-4xl font-bold text-white">R$ 497 à vista</span>
               </div>
             </div>
 
