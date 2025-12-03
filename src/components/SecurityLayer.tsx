@@ -27,16 +27,16 @@ export const SecurityLayer = () => {
       return false;
     };
 
-    // Detect DevTools
-    const detectDevTools = () => {
-      const threshold = 160;
-      if (
-        window.outerWidth - window.innerWidth > threshold ||
-        window.outerHeight - window.innerHeight > threshold
-      ) {
-        document.body.innerHTML = '';
-      }
-    };
+    // Detect DevTools - DISABLED (was causing page to disappear)
+    // const detectDevTools = () => {
+    //   const threshold = 160;
+    //   if (
+    //     window.outerWidth - window.innerWidth > threshold ||
+    //     window.outerHeight - window.innerHeight > threshold
+    //   ) {
+    //     document.body.innerHTML = '';
+    //   }
+    // };
 
     // Clear console periodically
     const clearConsole = () => {
@@ -53,7 +53,7 @@ export const SecurityLayer = () => {
     document.addEventListener('selectstart', handleSelectStart);
 
     // Set intervals
-    const devToolsInterval = setInterval(detectDevTools, 1000);
+    // const devToolsInterval = setInterval(detectDevTools, 1000); // DISABLED
     const consoleInterval = setInterval(clearConsole, 3000);
 
     // Override console methods
@@ -69,7 +69,7 @@ export const SecurityLayer = () => {
       document.removeEventListener('contextmenu', handleContextMenu);
       document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('selectstart', handleSelectStart);
-      clearInterval(devToolsInterval);
+      // clearInterval(devToolsInterval); // DISABLED
       clearInterval(consoleInterval);
     };
   }, []);
